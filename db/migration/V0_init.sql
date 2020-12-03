@@ -1,3 +1,12 @@
+create table if not exists users
+(
+    id       integer not null
+        constraint users_pkey
+            primary key,
+    name     varchar not null,
+    password varchar not null
+);
+
 create table if not exists book
 (
     "ISBN" varchar(13) not null
@@ -9,12 +18,4 @@ create table if not exists book
         references users,
     constraint user_id
 
-);
-create table if not exists users
-(
-    id       integer not null
-        constraint users_pkey
-            primary key,
-    name     varchar not null,
-    password varchar not null
 );
