@@ -2,20 +2,20 @@ package entity;
 
 
 public class Book {
-    private String ISBN;
+    private String isbn;
 
     private String name;
 
     private String author;
 
-    private String user;
+    private User user;
 
-    public String getISBN() {
-        return ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public String getName() {
@@ -34,11 +34,12 @@ public class Book {
         this.author = author;
     }
 
-    public String getUser() {
+
+    public User getUser() {
         return user;
     }
 
-    public void setUser(String user) {
+    public void setUser(User user) {
         this.user = user;
     }
 }
