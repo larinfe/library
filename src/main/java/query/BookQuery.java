@@ -8,7 +8,7 @@ public class BookQuery {
 
     public static final String UPDATE = "update books set user = ? where id = ?";
 
-    public static final String INSERT = "insert into books (name,author,isbn) values(?,?)";
+    public static final String INSERT = "insert into books (isbn,name,author) values(?,?,?)";
 
     public static final String DELETE = "delete books where isbn = ?";
 
