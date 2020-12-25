@@ -7,7 +7,7 @@ import query.BookQuery;
 
 @Repository
 
-public class BookRepositoryImpl extends BookRepository {
+public class BookRepositoryImpl implements BookRepository {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
