@@ -1,30 +1,19 @@
 package query;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 
 public class BookQuery {
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
 
-    public static String count = "select count(*) from books";
+    public static final String COUNT = "select count(*) from books";
 
+    public static final String UPDATE = "update books set user = ? where id = ?";
 
-    public static String update = "update books set user = ? where id = ?";
+    public static final String INSERT = "insert into books (name,author,isbn) values(?,?)";
 
+    public static final String DELETE = "delete books where isbn = ?";
 
-    public static String insert = "insert into books (name,author,isbn) values(?,?)";
+    public static final String FIND_BY_ID = "select * from books where id = ?";
 
-    public static String delete = "delete books where isbn = ?";
-
-    public static String findById = "select * from books where id = ?";
-
-    public static String findAll = "select * from books";
+    public static final String FIND_ALL = "select * from books";
 
 }
