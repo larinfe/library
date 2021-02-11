@@ -12,4 +12,6 @@ public interface BookRepository {
     public int update(Book b);
 
     public int delete(int id);
+
+    public Book findById(String isbn);
 }
