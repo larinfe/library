@@ -1,6 +1,7 @@
 package repository;
 
 import entity.Book;
+import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -40,7 +41,7 @@ public class BookRepositoryImpl implements BookRepository {
 
     @Override
     public Book findById(String isbn) {
-        return jdbcTemplate.queryForObject(BookQuery.FIND_BY_ID, new Mapper());
+        return jdbcTemplate.queryForObject(BookQuery.FIND_BY_ID, new Mapper(), isbn);
     }
 
 
@@ -50,7 +51,17 @@ class Mapper implements RowMapper<Book> {
 
     @Override
     public Book mapRow(ResultSet rs, int rowNum) throws SQLException {
+//        String name = rs.getString("name");
+//        String author = rs.getString("author");
+//        String isbn = rs.getString("ISBN");
+//        User user = rs.getObject("user");
         System.out.println(rs);
+//        Book book = new Book(name, author, isbn);
+//        book.setAuthor(author);
+//        book.setName(name);
+//        book.setUser(user);
+//        book.setIsbn(isbn);
+
         return null;
     }
 }
