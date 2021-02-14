@@ -10,6 +10,9 @@ public class Book {
 
     private User user;
 
+    public Book() {
+    }
+
     public String getIsbn() {
         return isbn;
     }

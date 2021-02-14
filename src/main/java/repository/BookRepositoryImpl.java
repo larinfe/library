@@ -51,17 +51,15 @@ class Mapper implements RowMapper<Book> {
 
     @Override
     public Book mapRow(ResultSet rs, int rowNum) throws SQLException {
-//        String name = rs.getString("name");
-//        String author = rs.getString("author");
-//        String isbn = rs.getString("ISBN");
-//        User user = rs.getObject("user");
+        String name = rs.getString("name");
+        String author = rs.getString("author");
+        String isbn = rs.getString("ISBN");
         System.out.println(rs);
-//        Book book = new Book(name, author, isbn);
-//        book.setAuthor(author);
-//        book.setName(name);
-//        book.setUser(user);
-//        book.setIsbn(isbn);
+        Book book = new Book();
+        book.setAuthor(author);
+        book.setName(name);
+        book.setIsbn(isbn);
 
-        return null;
+        return book;
     }
 }

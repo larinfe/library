@@ -22,7 +22,7 @@ public class BookController {
         return bookRepository.count();
     }
 
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "/{isbn}")
     public Book findById(@PathVariable String isbn) {
         return bookRepository.findById(isbn);
     }
