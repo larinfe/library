@@ -1,4 +1,4 @@
-package entity;
+package fedos.libraryApplication.entity;
 
 public class User {
     private Integer id;

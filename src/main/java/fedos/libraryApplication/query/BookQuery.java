@@ -1,4 +1,4 @@
-package query;
+package fedos.libraryApplication.query;
 
 
 public class BookQuery {

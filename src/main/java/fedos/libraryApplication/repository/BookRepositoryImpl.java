@@ -1,13 +1,11 @@
-package repository;
+package fedos.libraryApplication.repository;
 
-import entity.Book;
-import entity.User;
+import fedos.libraryApplication.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Repository;
-import query.BookQuery;
+import fedos.libraryApplication.query.BookQuery;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

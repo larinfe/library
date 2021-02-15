@@ -1,11 +1,11 @@
-package rest;
+package fedos.libraryApplication.rest;
 
-import entity.Book;
+import fedos.libraryApplication.entity.Book;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import repository.BookRepository;
+import fedos.libraryApplication.repository.BookRepository;
 
 @RestController
 @RequestMapping("/books")

@@ -1,6 +1,6 @@
-package repository;
+package fedos.libraryApplication.repository;
 
-import entity.Book;
+import fedos.libraryApplication.entity.Book;
 
 
 public interface BookRepository {
