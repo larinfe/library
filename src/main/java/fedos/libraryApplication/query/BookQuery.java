@@ -1,4 +1,4 @@
-package query;
+package fedos.libraryApplication.query;
 
 
 public class BookQuery {
@@ -12,7 +12,7 @@ public class BookQuery {
 
     public static final String DELETE = "delete books where isbn = ?";
 
-    public static final String FIND_BY_ID = "select * from books where id = ?";
+    public static final String FIND_BY_ID = "select isbn,name,author from books where isbn = ?";
 
     public static final String FIND_ALL = "select * from books";
 

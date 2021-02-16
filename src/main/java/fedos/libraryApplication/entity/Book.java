@@ -1,4 +1,4 @@
-package entity;
+package fedos.libraryApplication.entity;
 
 
 public class Book {
@@ -9,6 +9,9 @@ public class Book {
     private String author;
 
     private User user;
+
+    public Book() {
+    }
 
     public String getIsbn() {
         return isbn;

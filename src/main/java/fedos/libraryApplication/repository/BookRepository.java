@@ -1,6 +1,6 @@
-package repository;
+package fedos.libraryApplication.repository;
 
-import entity.Book;
+import fedos.libraryApplication.entity.Book;
 
 
 public interface BookRepository {
@@ -12,4 +12,6 @@ public interface BookRepository {
     public int update(Book b);
 
     public int delete(int id);
+
+    public Book findById(String isbn);
 }
