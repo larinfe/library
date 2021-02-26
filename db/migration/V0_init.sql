@@ -14,8 +14,6 @@ create table if not exists book
             primary key,
     name   varchar(60) not null,
     author varchar(60) not null,
-    "user" integer     not null
-        references users,
-    constraint user_id
-
+    "user" integer default null
+        references users
 );
