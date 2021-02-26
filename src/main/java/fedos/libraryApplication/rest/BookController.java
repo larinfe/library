@@ -1,10 +1,7 @@
 package fedos.libraryApplication.rest;
 
 import fedos.libraryApplication.entity.Book;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import fedos.libraryApplication.repository.BookRepository;
 
 @RestController
@@ -25,5 +22,10 @@ public class BookController {
     @GetMapping(value = "/{isbn}")
     public Book findById(@PathVariable String isbn) {
         return bookRepository.findById(isbn);
+    }
+
+    @PostMapping(value = "/create")
+    public int insert(@RequestBody Book newBook) {
+        return bookRepository.insert(newBook);
     }
 }

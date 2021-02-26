@@ -18,8 +18,8 @@ public class BookRepositoryImpl implements BookRepository {
     private JdbcTemplate jdbcTemplate;
 
     @Override
-    public int insert(Book b) {
-        return jdbcTemplate.update(BookQuery.INSERT, b);
+    public int insert(Book book) {
+        return jdbcTemplate.update(BookQuery.INSERT, book.getIsbn(), book.getName(), book.getAuthor());
     }
 
     @Override

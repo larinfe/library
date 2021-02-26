@@ -4,7 +4,7 @@ package fedos.libraryApplication.query;
 public class BookQuery {
 
 
-    public static final String COUNT = "select count(*) from books";
+    public static final String COUNT = "select count(*) from book";
 
     public static final String UPDATE = "update books set user = ? where id = ?";
 
